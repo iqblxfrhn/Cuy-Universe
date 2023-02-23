@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <title>HOME - Simple Iqbalcommerce</title>
+</head>
+
+<body>
+    <div class="chat fa fa-brands fa-whatsapp" onclick="chat()"></div>
+    <header>
+        <ul class="nav-list animate__animated animate__backInDown">
+            <div class="nav-item">
+                <a href="#" class="nav-link">
+                    <img src="assets/images/qla.png" alt="" width="40px">
+                </a>
+            </div>
+
+            <li class="nav-item">
+                <a href="/category/index.html" class="nav-link">
+                    <span class="nav-icon fa fa-list"></span>
+                    <span class="nav-text">CATEGORY</span>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a href="/product/index.html" class="nav-link">
+                    <span class="nav-icon fa fa-cart-plus"></span>
+                    <span class="nav-text">PRODUCT</span>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    <span class="nav-icon fa fa-contact-card"></span>
+                    <span class="nav-text">CONTACT</span>
+                </a>
+            </li>
+        </ul>
+    </header>
+
+    <main>
+        <div class="container">
+            <!-- Section Page Product List -->
+            <h2 class="title">Product List</h2>
+            <!-- Row Baris -->
+            <div class="row">
+                <!-- Kolom -->
+                <div class="column" onclick="buy('Baju Lebaran', 100000)">
+                    <img src="assets/images/product-1.jpg" />
+                    <h4>Baju Lebaran</h4>
+                    <p>Rp. 100.000</p>
+                </div>
+
+                <div class="column" onclick="buy('Sepatu Sekolah', 250000)">
+                    <img src="assets/images/product-2.jpg" />
+                    <h4>Sepatu Sekolah</h4>
+                    <p>Rp. 250.000</p>
+                </div>
+
+                <div class="column" onclick="buy('Celana Tahun Baru', 150000)">
+                    <img src="assets/images/product-3.jpg" />
+                    <h4>Celana Tahun Baru</h4>
+                    <p>Rp. 150.000</p>
+                </div>
+
+                <div class="column" onclick="buy('Crewneck Puma', 180000)">
+                    <img src="assets/images/product-4.jpg" />
+                    <h4>Crewneck Puma</h4>
+                    <p>Rp. 180.000</p>
+                </div>
+
+                <div class="column" onclick="buy('Sepatu Grey', 450000)">
+                    <img src="assets/images/product-5.jpg" />
+                    <h4>Sepatu Grey</h4>
+                    <p>Rp. 450.000</p>
+                </div>
+
+                <div class="column" onclick="buy('Kaos Puma Original', 125000)">
+                    <img src="assets/images/product-6.jpg" />
+                    <h4>Kaos Puma Original</h4>
+                    <p>Rp. 125.000</p>
+                </div>
+
+                <div class="column" onclick="buy('Kaos Kaki HRX', 75000)">
+                    <img src="assets/images/product-7.jpg" />
+                    <h4>Kaos Kaki HRX</h4>
+                    <p>Rp. 75.000</p>
+                </div>
+
+                <div class="column" onclick="buy('Jam Tangan Rolex', 1500000)">
+                    <img src="assets/images/product-8.jpg" />
+                    <h4>Jam Tangan Rolex</h4>
+                    <p>Rp. 1.500.000</p>
+                </div>
+
+                <div class="column" onclick="buy('Jam Tangan Skhmei', 250000)">
+                    <img src="assets/images/product-9.jpg" />
+                    <h4>Jam Tangan Skhmei</h4>
+                    <p>Rp. 250.000</p>
+                </div>
+
+                <div class="column" onclick="buy('Sepatu HRX', 300000)">
+                    <img src="assets/images/product-10.jpg" />
+                    <h4>Sepatu HRX</h4>
+                    <p>Rp. 300.000</p>
+                </div>
+
+                <div class="column" onclick="buy('Sepatu Branded Grey', 900000)">
+                    <img src="assets/images/product-11.jpg" />
+                    <h4>Sepatu Branded Grey</h4>
+                    <p>Rp. 900.000</p>
+                </div>
+
+                <div class="column" onclick="buy('Jogger Pant', 500000)">
+                    <img src="assets/images/product-12.jpg" />
+                    <h4>Jogger Pant</h4>
+                    <p>Rp. 500.000</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Copyright <span id="year"></span>. Iqbalxfrhn</p>
+    </footer>
+
+    <script src="assets/source.js"></script>
+</body>
+
+</html>

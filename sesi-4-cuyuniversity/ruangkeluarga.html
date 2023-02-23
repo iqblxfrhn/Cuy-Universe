@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.1/dist/flowbite.min.css" />
+    <title>RUANG KELUARGA</title>
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="bg-grey-600 border-gray-200 px-4 sm:px-6 py-5 rounded dark:bg-black-300">
+        <div class="container flex flex-wrap justify-center items-center mx-auto gap-2">
+            <a href="index.html" class="flex items-center">
+                <img src="assets/images/profile.png" class="mr-3 h-6 sm:h-9" alt="">
+                <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Iqbalxfrhn</span>
+            </a>
+            <button data-collapse-toggle="navbar-default" type="button"
+                class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                aria-controls="navbar-default" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                        clip-rule="evenodd"></path>
+                </svg>
+            </button>
+            <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                <ul
+                    class="flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                    <li>
+                        <a href="ruangkeluarga.html"
+                            class="block py-2 pr-4 pl-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white"
+                            aria-current="page">Ruang Keluarga</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Ruang
+                            Makan</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Ruang
+                            Tidur</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Ruang
+                            Tamu</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- NAVBAR END -->
+
+    <h1 class="text-center text-white text-3xl font-bold pt-5 bg-gray-800">INI ADALAH RUANG KELUARGA</h1>
+    <div class="flex justify-center items-center min-h-screen w-full bg-gray-800 gap-4">
+        <!-- Lampu 1 -->
+        <div class="flex flex-col gap-2 items-center">
+            <img src="assets/images/off.png" alt="" id="lampu1" width="40%">
+            <label for="default-toggle1" class="inline-flex relative items-center cursor-pointer">
+                <input type="checkbox" id="default-toggle1" class="sr-only peer" onchange="saklar()">
+                <div
+                    class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600">
+                </div>
+            </label>
+        </div>
+
+        <!-- Lampu 2 -->
+        <div class="flex flex-col gap-2 items-center">
+            <img src="assets/images/off.png" alt="" id="lampu2" width="40%">
+            <label for="default-toggle2" class="inline-flex relative items-center cursor-pointer">
+                <input type="checkbox" id="default-toggle2" class="sr-only peer" onchange="saklar()">
+                <div
+                    class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600">
+                </div>
+            </label>
+        </div>
+
+        <!-- Lampu 3 -->
+        <div class="flex flex-col gap-2 items-center">
+            <img src="assets/images/off.png" alt="" id="lampu3" width="40%">
+            <label for="default-toggle3" class="inline-flex relative items-center cursor-pointer">
+                <input type="checkbox" id="default-toggle3" class="sr-only peer" onchange="saklar()">
+                <div
+                    class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600">
+                </div>
+            </label>
+        </div>
+    </div>
+
+    <!-- Ini adalah sebuah Script JS kita -->
+    <script src="https://unpkg.com/flowbite@1.5.1/dist/flowbite.js"></script>
+    <script src="saklar.js" type="application/javascript"></script>
+</body>
+
+</html>
